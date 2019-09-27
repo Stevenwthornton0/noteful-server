@@ -20,7 +20,7 @@ const morganOption = (NODE_ENV === 'production')
   app.use('/folders', foldersRouter);
   app.use('/notes', notesRouter);
 
-  app.get('/', (req, res) => {
+  app.get('/*', (req, res) => {
     res.send('Hello world!')
   })
 
